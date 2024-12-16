@@ -1,13 +1,514 @@
-body {
+/*------ ------ Estilos Generales ------ ------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-family: "Roboto", sans-serif;
+	background: #0d3b66;
+	color: #fff;
+}
+
+body {
+  color-scheme: dark light;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+/*------ ------ Estilos Header ------ ------*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.header-logo h1 {
+  color: #ee964b;
+}
+
+.header-logo, .header-buttons {
+  padding: 0 20px;
+}
+
+.header-links a {
+  margin-left: 20px;
+  background: #f4d35e;
+  color: #0d3b66;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.header-links a:hover {
+  background: #ee964b;
+}
+
+/*------ ------ Estilos Hero ------ ------*/
+
+.hero {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-promotion {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.hero-promotion h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #f4d35e;
+}
+
+.hero-promotion p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.hero-promotion-link a {
+  text-decoration: none;
+  background: #f4d35e;
+  color: #0d3b66;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  transition: all .5s ease;
+}
+
+.hero-promotion-link a:hover {
+  background: #ee964b;
+}
+
+.hero-image {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+/*------ ------ Estilos Upload ------ ------*/
+
+.upload-title {
+  padding: 30px 0;
+}
+
+.upload-title h3 {
+  font-size: 32px;
+  padding: 0 20px;
+}
+
+.upload-form {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.upload-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-form form input {
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.upload-form form button {
+  padding: 10px;
+  width: fit-content;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  min-width: 110px;
+}
+
+/*------ ------ Estilos Releases ------ ------*/
+
+.releases-title-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.releases-title-controls h3 {
+  font-size: 32px;
+  color: #f4d35e;
+  padding: 0 20px;
+}
+
+.releases-controls {
+  display: flex;
+  padding: 0 20px;
+}
+
+.releases-controls button {
+  margin-left: 10px;
+  background: #f4d35e;
+  border: none;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.releases-controls button:hover {
+  background: #ee964b;
+}
+
+.releases-controls button svg {
+  font-weight: bold;
+  color: #0d3b66;
+}
+
+.releases-cards {
+  width: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  margin-bottom: 30px;
+}
+
+.releases-slider {
+  display: flex;
+  justify-content: space-between;
+}
+
+.releases-slider-card {
+  min-width: 20%;
+  padding: 0 20px;
+}
+
+.releases-slider-card img {
+  width: 100%;
+  border: 1px solid #f4d35e;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.releases-slider-card span:nth-child(2) {
+  display: block;
+  font-weight: bold;
+  color: #f4d35e;
+  margin-bottom: 10px;
+}
+
+/*------ ------ Estilos Nesletter ------ ------*/
+
+.newsletter-title {
+  padding: 30px 0;
+}
+
+.newsletter-title h3 {
+  font-size: 32px;
+  padding: 0 20px;
+  color: #f4d35e;
+}
+
+.subscription-nospam {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #fff;
+}
+
+.subscription {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.subscription p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.subscription form input {
+  display: block;
+  width: 70%;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  background: #0d3b66;
+  border: 1px solid #f4d35e;
+  outline: none;
+}
+
+.subscription form input::placeholder {
+  color: #fff;
+}
+
+.subscription form input:focus {
+  box-shadow: 0 0 9px 3px #ee964b;
+}
+
+.subscription form button {
+  background: #f4d35e;
+  color: #0d3b66;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .5s ease;
+  width: 35%;
+}
+
+.subscription form button:hover {
+  background: #ee964b;
+}
+
+.nospam {
+  width: 50%;
+  display: flex;
+}
+
+.nospam div {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.nospam div svg {
+  font-size: 32px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #0d3b66;
+  background: #f4d35e;
+}
+
+.nospam div h4 {
+  margin-bottom: 10px;
+  color: #f4d35e;
+}
+
+.nospam div p {
+  line-height: 26px;
+}
+
+/*------ ------ Estilos Footer ------ ------*/
+
+.footer-row-one {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo h2 {
+  color: #ee964b;
+  font-size: 32px;
+}
+
+.footer-row-one .footer-logo,
+.footer-row-one .footer-products,
+.footer-row-one .footer-aboutus,
+.footer-row-one .footer-networks {
+  width: 25%;
+  padding: 0 20px;
+}
+
+.footer-row-one div h3 {
+  margin-bottom: 20px;
+  color: #f4d35e;
+}
+
+.footer-row-one div a {
+  display: block;
+  width: max-content;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  padding-bottom: 2.5px;
+  transition: all .5s ease;
+}
+
+.links {
+  display: flex;
+  justify-content: start;
+}
+
+.links a {
+  margin-right: 20px;
+}
+
+.footer-networks a svg {
+  font-size: 32px;
+  color: #fff;
+}
+
+.footer-row-two {
+  padding: 30px 0;
+}
+
+.footer-row-two p {
+  text-align: center;
+}
+
+/*------ ------ Media Querys ------ ------*/
+
+@media(max-width: 768px) {
+  .hero {
+      flex-direction: column;
+  }
+  
+  .hero-promotion, .hero-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-promotion {
+    margin-bottom: 20px;
+  }
+
+  .hero-promotion h2 {
+    font-size: 32px;
+  }
+
+  .hero-image img {
+    width: 75%;
+    margin: auto;
+  }
+
+  .releases-slider .releases-slider-card {
+    min-width: 33.33%;
+  }
+
+  .subscription-nospam {
+    flex-direction: column;
+  }
+
+  .newsletter-title {
+    text-align: center;
+  }
+
+  .subscription-nospam .subscription {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .subscription form input {
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .subscription-nospam .nospam {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-row-one {
+    flex-direction: column;
+  }
+
+  .footer-row-one .footer-logo {
+    width: 100%;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  .footer-logo h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-row-one .footer-products {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-row-one .footer-aboutus {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-row-one .footer-networks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media(max-width: 576px) {
+  header {
+    flex-direction: column;
+  }
+
+  .header-logo h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .header-links a {
+    margin: 0 10px;
+  }
+
+  .hero-promotion h2 {
+    font-size: 28px;
+  }
+
+  .hero-image img {
+    width: 100%;
+  }
+
+  .releases-title-controls h3,
+  .newsletter-title h3,
+  .footer-logo h2 {
+    font-size: 28px;
+  }
 }

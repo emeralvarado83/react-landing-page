@@ -1,0 +1,54 @@
+[debug] [2024-12-16T16:42:49.440Z] ----------------------------------------------------------------------
+[debug] [2024-12-16T16:42:49.445Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Emerson\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2024-12-16T16:42:49.445Z] CLI Version:   13.26.0
+[debug] [2024-12-16T16:42:49.445Z] Platform:      win32
+[debug] [2024-12-16T16:42:49.445Z] Node Version:  v22.11.0
+[debug] [2024-12-16T16:42:49.445Z] Time:          Mon Dec 16 2024 12:42:49 GMT-0400 (hora de Venezuela)
+[debug] [2024-12-16T16:42:49.445Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-16T16:42:49.448Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-12-16T16:42:49.483Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-16T16:42:49.483Z] > authorizing via signed-in user (emeralvarado1983@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Emerson\Documents\proyectos\landing_store_frontend
+
+[debug] [2024-12-16T16:42:49.858Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-12-16T16:42:49.858Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-12-16T16:43:17.299Z] Checked if tokens are valid: false, expires at: 1734052545759
+[debug] [2024-12-16T16:43:17.300Z] Checked if tokens are valid: false, expires at: 1734052545759
+[debug] [2024-12-16T16:43:17.300Z] > refreshing access token with scopes: []
+[debug] [2024-12-16T16:43:17.302Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-12-16T16:43:17.302Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-16T16:43:17.779Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-12-16T16:43:17.779Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-16T16:43:17.787Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-12-16T16:43:18.590Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-12-16T16:43:18.590Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project landing-page-33ac0 (landing-page) 
+[info] 
+=== Hosting Setup
+[debug] [2024-12-16T16:43:38.673Z] Checked if tokens are valid: true, expires at: 1734370996779
+[debug] [2024-12-16T16:43:38.673Z] Checked if tokens are valid: true, expires at: 1734370996779
+[debug] [2024-12-16T16:43:38.673Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/landing-page-33ac0 [none]
+[debug] [2024-12-16T16:43:39.434Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/landing-page-33ac0 200
+[debug] [2024-12-16T16:43:39.434Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/landing-page-33ac0 {"projectId":"landing-page-33ac0","projectNumber":"1050335286164","displayName":"landing-page","name":"projects/landing-page-33ac0","resources":{"hostingSite":"landing-page-33ac0"},"state":"ACTIVE","etag":"1_9ec2ef74-b141-45a6-aa9b-dea312cd5262"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
